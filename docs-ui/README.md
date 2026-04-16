@@ -1,26 +1,30 @@
 # Backstage UI Docs
 
-Backstage UI is our internal UI library built for Backstage. We built this website to document the library and its components. You can view this website [here](https://ui.backstage.io).
+Backstage UI Docs is the documentation website for the Backstage internal UI library (`@backstage/ui`).  
+The site provides an overview of the design system, reusable UI components, and usage guidelines for Backstage.
 
-## How to run locally
+You can view the live website here:  
+👉 https://ui.backstage.io
 
-This website is built with Next.js and it is hosted on Github pages. To run it locally, you can run the following command:
+---
+
+## Running the Site Locally:
+
+The documentation site is built with **Next.js** and hosted on **GitHub Pages**.
+
+To run the site locally:
 
 ```bash
 yarn start
 ```
 
-## Deployment
+## Deployment:
 
-Deployments are done automatically when a PR is merged into the `master` branch. We host the website using Github pages.
+Deployments are fully automated and triggered when a pull request is merged into the `master` branch. The site is hosted on GitHub Pages.
 
-## Maintaining Component Changelogs
+## Maintaining Component Changelogs:
 
-After a `@backstage/ui` release, sync the component changelogs to keep documentation up-to-date:
-
-```bash
-yarn sync:changelog
-```
+After each `@backstage/ui` release, run `yarn sync:changelog` to keep component changelogs in sync with the documentation.
 
 This script:
 
@@ -31,10 +35,10 @@ This script:
 
 After running, review the changes in `src/utils/changelog.ts` and commit them.
 
-**Preview changes before writing:**
+## Preview changes before writing:
+
+To preview the changelog updates without modifying any files, run:
 
 ```bash
 yarn sync:changelog:dry-run
 ```
-
-Running this gives you a summary of what would be written, without actually adding or changing any files.
