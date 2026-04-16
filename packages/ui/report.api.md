@@ -8,8 +8,8 @@ import { CellProps as CellProps_2 } from 'react-aria-components';
 import type { CheckboxGroupProps as CheckboxGroupProps_2 } from 'react-aria-components';
 import type { CheckboxProps as CheckboxProps_2 } from 'react-aria-components';
 import { ColumnProps as ColumnProps_2 } from 'react-aria-components';
-import type { ColumnSize } from '@react-types/table';
-import type { ColumnStaticSize } from '@react-types/table';
+import type { ColumnSize } from 'react-stately';
+import type { ColumnStaticSize } from 'react-stately';
 import type { ComponentProps } from 'react';
 import type { ComponentPropsWithoutRef } from 'react';
 import type { ComponentPropsWithRef } from 'react';
@@ -1124,7 +1124,8 @@ export const DialogDefinition: {
   };
   readonly classNames: {
     readonly root: 'bui-DialogOverlay';
-    readonly dialog: 'bui-Dialog';
+    readonly container: 'bui-Dialog';
+    readonly inner: 'bui-DialogInner';
     readonly content: 'bui-DialogContent';
   };
   readonly propDefs: {
